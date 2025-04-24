@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class MigrationBook extends Migration
+class MigrationKometar extends Migration
 {
     public function up()
     {
@@ -12,9 +12,10 @@ class MigrationBook extends Migration
             'id' => ['type' => 'INT', 'unsigned' => true, 'auto_increment' => true],
             'obsah' => ['type' => 'TEXT'],
             'pridani' => ['type' => 'DATE'],
-            "id_hry" => ["type" => "INT"],
+            "id_hra" => ["type" => "INT"],
         ]);
         $this->forge->addKey('id', true);
+        //$this->forge->addForeignKey("id_hra","hra","id");
         $this->forge->createTable('komentar');
     }
 

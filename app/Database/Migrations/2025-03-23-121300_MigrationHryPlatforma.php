@@ -14,8 +14,8 @@ class MigrationBookAuthor extends Migration
             'platforma_id' => ['type' => 'INT', 'unsigned' => true]
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->addForeignKey('hra_id', 'book', 'id');
-        $this->forge->addForeignKey('platforma_id', 'author', 'id');
+        $this->forge->addForeignKey('hra_id','hra' ,'id');
+        $this->forge->addForeignKey('platforma_id', 'platforma', 'id');
         $this->forge->createTable('hra_platforma');
     }
  

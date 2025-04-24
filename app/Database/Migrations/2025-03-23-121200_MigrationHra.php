@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class MigrationBook extends Migration
+class MigrationHra extends Migration
 {
     public function up()
     {
@@ -14,10 +14,12 @@ class MigrationBook extends Migration
             'popis' => ['type' => 'TEXT'],
             'vydani' => ['type' => 'DATE'],
             'obrazek' => ['type' => 'VARCHAR', 'constraint' => 255],
-            'hodnoceni' => ['type' => 'TINYINT']
-            "id_tvurci" => ["type" => "INT"],
+            'hodnoceni' => ['type' => 'TINYINT'],
+            "id_tvurci" => ["type" => "INT"]
         ]);
-        $this->forge->addKey('id', true);
+        $this->forge->addPrimaryKey('id', true);
+       // $this->forge->addForeignKey("id_tvurci","tvurci","id");
+        $this->forge->foreign('id_tvurci')->references('id')->on('tvurci')->onDelete('cascade');
         $this->forge->createTable('hra');
     }
 

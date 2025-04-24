@@ -4,17 +4,17 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class MigrationBookAuthor extends Migration
+class MigrationZanr extends Migration
 {
     public function up()
     {
         $this->forge->addField([
             'id' => ['type' => 'INT', 'unsigned' => true, 'auto_increment' => true],
-            'nazev' => ['type' => 'VARCHAR'],
+            'nazev' => ['type' => 'VARCHAR']
             
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->createTable('zaner');
+        $this->forge->createTable('zanr');
     }
  
     public function down()

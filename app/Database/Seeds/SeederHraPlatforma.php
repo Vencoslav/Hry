@@ -4,7 +4,7 @@ namespace App\Database\Seeds;
 
 use CodeIgniter\Database\Seeder;
 
-class SeederBookGenre extends Seeder
+class SeederHraPlatforma extends Seeder
 {
     public function run()
     {
@@ -15,7 +15,7 @@ class SeederBookGenre extends Seeder
         $platformaIds = array_column($platformaIds, 'id');
 
         foreach ($hraIds as $hraId) {
-            $selectedPlatforma = (array) array_rand(array_flip($platfomraIds), rand(1, 3));
+            $selectedPlatforma = (array) array_rand(array_flip($platformaIds), rand(1, 3));
 
             foreach ($selectedPlatforma as $platformaId) {
                 $this->db->table('hra_platforma')->insert([
