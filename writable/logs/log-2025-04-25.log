@@ -1,0 +1,136 @@
+ERROR - 2025-04-25 10:05:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 PRIMARY KEY(`id`),
+	CONSTRAINT `hra_id_tvurce_foreign` FOREIGN KEY (`id_tvurce' at line 9 in C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\laragon\www\jarotek\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\laragon\www\jarotek\Hry\app\Database\Migrations\2025-03-23-121200_MigrationHra.php(23): CodeIgniter\Database\Forge->createTable('hra')
+#5 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationHra->up()
+#6 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\jarotek\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\jarotek\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\jarotek\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\jarotek\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\jarotek\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\jarotek\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-25 10:11:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 PRIMARY KEY(`id`),
+	CONSTRAINT `hra_id_tvurce_foreign` FOREIGN KEY (`id_tvurce' at line 9 in C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\laragon\www\jarotek\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\laragon\www\jarotek\Hry\app\Database\Migrations\2025-03-23-121200_MigrationHra.php(22): CodeIgniter\Database\Forge->createTable('hra')
+#5 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationHra->up()
+#6 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\jarotek\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\jarotek\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\jarotek\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\jarotek\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\jarotek\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\jarotek\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-25 10:13:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 PRIMARY KEY(`id`),
+	CONSTRAINT `hra_id_tvurce_foreign` FOREIGN KEY (`id_tvurce' at line 9 in C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\laragon\www\jarotek\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\laragon\www\jarotek\Hry\app\Database\Migrations\2025-03-23-121200_MigrationHra.php(22): CodeIgniter\Database\Forge->createTable('hra')
+#5 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationHra->up()
+#6 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\jarotek\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\jarotek\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\jarotek\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\jarotek\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\jarotek\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\jarotek\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-25 10:13:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 PRIMARY KEY(`id`),
+	CONSTRAINT `hra_id_tvurce_foreign` FOREIGN KEY (`id_tvurce' at line 9 in C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\laragon\www\jarotek\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\laragon\www\jarotek\Hry\app\Database\Migrations\2025-03-23-121200_MigrationHra.php(22): CodeIgniter\Database\Forge->createTable('hra')
+#5 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationHra->up()
+#6 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\jarotek\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\jarotek\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\jarotek\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\jarotek\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\jarotek\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\jarotek\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-25 10:17:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 PRIMARY KEY(`id`),
+	CONSTRAINT `hra_id_tvurce_foreign` FOREIGN KEY (`id_tvurce' at line 9 in C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\laragon\www\jarotek\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\laragon\www\jarotek\Hry\app\Database\Migrations\2025-03-23-121200_MigrationHra.php(22): CodeIgniter\Database\Forge->createTable('hra')
+#5 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationHra->up()
+#6 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\jarotek\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\jarotek\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\jarotek\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\jarotek\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\jarotek\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\jarotek\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-25 10:54:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 PRIMARY KEY(`id`),
+	CONSTRAINT `hra_id_tvurce_foreign` FOREIGN KEY (`id_tvurce' at line 9 in C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\laragon\www\jarotek\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\laragon\www\jarotek\Hry\app\Database\Migrations\2025-03-23-121200_MigrationHra.php(22): CodeIgniter\Database\Forge->createTable('hra')
+#5 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationHra->up()
+#6 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\jarotek\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\jarotek\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\jarotek\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\jarotek\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\jarotek\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\jarotek\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-25 10:57:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 PRIMARY KEY(`id`),
+	CONSTRAINT `hra_id_tvurce_foreign` FOREIGN KEY (`id_tvurce' at line 9 in C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\laragon\www\jarotek\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\laragon\www\jarotek\Hry\app\Database\Migrations\2025-03-23-121200_MigrationHra.php(22): CodeIgniter\Database\Forge->createTable('hra')
+#5 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationHra->up()
+#6 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\jarotek\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\jarotek\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\jarotek\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\jarotek\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\jarotek\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\jarotek\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-25 11:01:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 PRIMARY KEY(`id`),
+	CONSTRAINT `hra_id_tvurce_foreign` FOREIGN KEY (`id_tvurce' at line 9 in C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\jarotek\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\laragon\www\jarotek\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\laragon\www\jarotek\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\laragon\www\jarotek\Hry\app\Database\Migrations\2025-03-23-121200_MigrationHra.php(22): CodeIgniter\Database\Forge->createTable('hra')
+#5 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationHra->up()
+#6 C:\laragon\www\jarotek\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\jarotek\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\jarotek\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\jarotek\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\jarotek\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\jarotek\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\jarotek\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}

@@ -29,6 +29,6 @@ class SeederPlatforma extends Seeder
         ];
 
         // Using Query Builder to insert multiple rows
-        $this->db->table('table_name')->insertBatch($data);
+        $this->db->table('platforma')->insertBatch($data);
     }
 }

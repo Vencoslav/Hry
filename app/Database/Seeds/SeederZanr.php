@@ -14,7 +14,7 @@ class SeederZanr extends Seeder
         ];
         
         foreach ($genres as $genre) {
-            $this->db->table('genre')->insert(['name' => $genre]);
+            $this->db->table('zanr')->insert(['name' => $genre]);
         }
     }
 }

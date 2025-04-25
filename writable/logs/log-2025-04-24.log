@@ -336,13 +336,13 @@ Stack trace:
 #11 C:\xampp\htdocs\dolezal_vaclav\hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
 #12 C:\xampp\htdocs\dolezal_vaclav\hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
 #13 {main}
-ERROR - 2025-04-24 19:03:35 --> mysqli_sql_exception: Table 'tvurci' already exists in C:\xampp\htdocs\dolezal_vaclav\hry\system\Database\MySQLi\Connection.php:327
+ERROR - 2025-04-24 19:03:35 --> mysqli_sql_exception: Table 'tvurce' already exists in C:\xampp\htdocs\dolezal_vaclav\hry\system\Database\MySQLi\Connection.php:327
 Stack trace:
 #0 C:\xampp\htdocs\dolezal_vaclav\hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `t...', 0)
 #1 C:\xampp\htdocs\dolezal_vaclav\hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
 #2 C:\xampp\htdocs\dolezal_vaclav\hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
 #3 C:\xampp\htdocs\dolezal_vaclav\hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
-#4 C:\xampp\htdocs\dolezal_vaclav\hry\app\Database\Migrations\2025-03-23-121200_MigrationTvurce.php(19): CodeIgniter\Database\Forge->createTable('tvurci')
+#4 C:\xampp\htdocs\dolezal_vaclav\hry\app\Database\Migrations\2025-03-23-121200_MigrationTvurce.php(19): CodeIgniter\Database\Forge->createTable('tvurce')
 #5 C:\xampp\htdocs\dolezal_vaclav\hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationTvurce->up()
 #6 C:\xampp\htdocs\dolezal_vaclav\hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
 #7 C:\xampp\htdocs\dolezal_vaclav\hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)

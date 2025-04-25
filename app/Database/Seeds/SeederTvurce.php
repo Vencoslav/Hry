@@ -44,7 +44,7 @@ class SeederTvurce extends Seeder
                 'popis' => /*$this->translate(*/$faker->paragraph(8)/*, "la", "en")*/,
                 'zalozeni' => $faker->date(),
             ];
-            $this->db->table('tvurci')->insert($data);
+            $this->db->table('tvurce')->insert($data);
         }
     }
 }

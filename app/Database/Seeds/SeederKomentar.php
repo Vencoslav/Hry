@@ -23,7 +23,7 @@ class SeederKomentar extends Seeder
                 'pridani' => $faker->date(),
                 
             ];
-            $this->db->table('hra')->insert($data);
+            $this->db->table('komentar')->insert($data);
         }
     }
 }

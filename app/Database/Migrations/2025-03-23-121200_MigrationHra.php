@@ -15,11 +15,10 @@ class MigrationHra extends Migration
             'vydani' => ['type' => 'DATE'],
             'obrazek' => ['type' => 'VARCHAR', 'constraint' => 255],
             'hodnoceni' => ['type' => 'TINYINT'],
-            "id_tvurci" => ["type" => "INT"]
+            "id_tvurce" => ["type" => "INT"]
         ]);
         $this->forge->addPrimaryKey('id', true);
-       // $this->forge->addForeignKey("id_tvurci","tvurci","id");
-        $this->forge->foreign('id_tvurci')->references('id')->on('tvurci')->onDelete('cascade');
+        $this->forge->addForeignKey("id_tvurce","tvurce","id");
         $this->forge->createTable('hra');
     }
 

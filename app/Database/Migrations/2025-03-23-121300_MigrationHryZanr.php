@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class MigrationBookAuthor extends Migration
+class MigrationHraZanr extends Migration
 {
     public function up()
     {

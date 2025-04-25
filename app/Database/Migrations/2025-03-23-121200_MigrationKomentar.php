@@ -15,7 +15,7 @@ class MigrationKometar extends Migration
             "id_hra" => ["type" => "INT"],
         ]);
         $this->forge->addKey('id', true);
-        //$this->forge->addForeignKey("id_hra","hra","id");
+        $this->forge->addForeignKey("id_hra","hra","id");
         $this->forge->createTable('komentar');
     }
 
