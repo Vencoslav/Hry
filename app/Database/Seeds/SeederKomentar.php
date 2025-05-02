@@ -21,7 +21,7 @@ class SeederKomentar extends Seeder
             $data = [
                 'obsah' => /*$this->translate(*/$faker->paragraph(8)/*, "la", "en")*/,
                 'pridani' => $faker->date(),
-                
+                'id_hra' => rand(2,5001),
             ];
             $this->db->table('komentar')->insert($data);
         }

@@ -348,3 +348,107 @@ Stack trace:
 #11 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
 #12 C:\xampp\htdocs\dolezal_vaclav\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
 #13 {main}
+CRITICAL - 2025-05-02 18:25:23 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-05-02 18:25:44 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-05-02 18:26:17 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-05-02 18:26:21 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-05-02 18:30:28 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-05-02 18:36:06 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2025-05-02 16:53:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`hry`.`hra`, CONSTRAINT `hra_id_tvurce_foreign` FOREIGN KEY (`id_tvurce`) REFERENCES `tvurce` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `hr...', 0)
+#1 C:\xampp\htdocs\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `hr...')
+#2 C:\xampp\htdocs\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `hr...')
+#3 C:\xampp\htdocs\Hry\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `hr...', Array, false)
+#4 C:\xampp\htdocs\Hry\app\Database\Seeds\SeederHra.php(29): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Hry\system\Database\Seeder.php(147): App\Database\Seeds\SeederHra->run()
+#6 C:\xampp\htdocs\Hry\app\Database\Seeds\SeederDatabase.php(11): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\xampp\htdocs\Hry\system\Database\Seeder.php(147): App\Database\Seeds\SeederDatabase->run()
+#8 C:\xampp\htdocs\Hry\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#9 C:\xampp\htdocs\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#10 C:\xampp\htdocs\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#11 C:\xampp\htdocs\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#12 C:\xampp\htdocs\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\xampp\htdocs\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-05-02 17:02:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`hry`.`komentar`, CONSTRAINT `komentar_id_hra_foreign` FOREIGN KEY (`id_hra`) REFERENCES `hra` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ko...', 0)
+#1 C:\xampp\htdocs\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 C:\xampp\htdocs\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 C:\xampp\htdocs\Hry\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 C:\xampp\htdocs\Hry\app\Database\Seeds\SeederKomentar.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Hry\system\Database\Seeder.php(147): App\Database\Seeds\SeederKomentar->run()
+#6 C:\xampp\htdocs\Hry\app\Database\Seeds\SeederDatabase.php(13): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\xampp\htdocs\Hry\system\Database\Seeder.php(147): App\Database\Seeds\SeederDatabase->run()
+#8 C:\xampp\htdocs\Hry\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#9 C:\xampp\htdocs\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#10 C:\xampp\htdocs\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#11 C:\xampp\htdocs\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#12 C:\xampp\htdocs\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\xampp\htdocs\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-05-02 17:11:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`hry`.`komentar`, CONSTRAINT `komentar_id_hra_foreign` FOREIGN KEY (`id_hra`) REFERENCES `hra` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ko...', 0)
+#1 C:\xampp\htdocs\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ko...')
+#2 C:\xampp\htdocs\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ko...')
+#3 C:\xampp\htdocs\Hry\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ko...', Array, false)
+#4 C:\xampp\htdocs\Hry\app\Database\Seeds\SeederKomentar.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Hry\system\Database\Seeder.php(147): App\Database\Seeds\SeederKomentar->run()
+#6 C:\xampp\htdocs\Hry\app\Database\Seeds\SeederDatabase.php(13): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\xampp\htdocs\Hry\system\Database\Seeder.php(147): App\Database\Seeds\SeederDatabase->run()
+#8 C:\xampp\htdocs\Hry\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#9 C:\xampp\htdocs\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#10 C:\xampp\htdocs\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#11 C:\xampp\htdocs\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#12 C:\xampp\htdocs\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\xampp\htdocs\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-05-02 17:20:02 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\xampp\htdocs\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `za...', 0)
+#1 C:\xampp\htdocs\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `za...')
+#2 C:\xampp\htdocs\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `za...')
+#3 C:\xampp\htdocs\Hry\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `za...', Array, false)
+#4 C:\xampp\htdocs\Hry\app\Database\Seeds\SeederZanr.php(17): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Hry\system\Database\Seeder.php(147): App\Database\Seeds\SeederZanr->run()
+#6 C:\xampp\htdocs\Hry\app\Database\Seeds\SeederDatabase.php(15): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\xampp\htdocs\Hry\system\Database\Seeder.php(147): App\Database\Seeds\SeederDatabase->run()
+#8 C:\xampp\htdocs\Hry\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#9 C:\xampp\htdocs\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#10 C:\xampp\htdocs\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#11 C:\xampp\htdocs\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#12 C:\xampp\htdocs\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\xampp\htdocs\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}

@@ -8,12 +8,12 @@ class SeederDatabase extends Seeder
 {
     public function run()
     {
+        $this->call('SeederTvurce');
         $this->call('SeederHra');
-        $this->call('SeederHraPlatforma');
-        $this->call('SeederHraZanr');
         $this->call('SeederKomentar');
         $this->call('SeederPlatforma');
-        $this->call('SeederTvurce');
         $this->call('SeederZanr');
+        $this->call('SeederHraPlatforma');
+        $this->call('SeederHraZanr');
     }
 }
