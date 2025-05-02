@@ -4,23 +4,23 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class MigrationKometar extends Migration
+class MigrationKomentar extends Migration
 {
     public function up()
     {
         $this->forge->addField([
-            'id' => ['type' => 'INT', 'unsigned' => true, 'auto_increment' => true],
-            'obsah' => ['type' => 'TEXT'],
-            'pridani' => ['type' => 'DATE'],
-            "id_hra" => ["type" => "INT"],
+            'id'       => ['type' => 'INT', 'unsigned' => true, 'auto_increment' => true],
+            'obsah'    => ['type' => 'TEXT', 'null' => false],
+            'pridani'  => ['type' => 'DATE', 'null' => false],
+            'id_hra'   => ['type' => 'INT', 'unsigned' => true], // důležité!
         ]);
-        $this->forge->addKey('id', true);
-        $this->forge->addForeignKey("id_hra","hra","id");
+        $this->forge->addPrimaryKey('id');
+        $this->forge->addForeignKey('id_hra', 'hra', 'id', 'CASCADE', 'CASCADE');
         $this->forge->createTable('komentar');
     }
 
     public function down()
     {
-        
+        $this->forge->dropTable('komentar');
     }
 }

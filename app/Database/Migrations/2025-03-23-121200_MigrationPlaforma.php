@@ -10,7 +10,7 @@ class MigrationPlatforma extends Migration
     {
         $this->forge->addField([
             'id' => ['type' => 'INT', 'unsigned' => true, 'auto_increment' => true],
-            'nazev' => ['type' => 'VARCHAR'],
+            'nazev' => ['type' => 'VARCHAR', 'constraint' => 255],
         ]);
         $this->forge->addKey('id', true);
         $this->forge->createTable('platforma');
@@ -18,6 +18,6 @@ class MigrationPlatforma extends Migration
 
     public function down()
     {
-        
+        $this->forge->dropTable('platforma');
     }
 }

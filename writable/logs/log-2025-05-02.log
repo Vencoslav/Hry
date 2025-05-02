@@ -229,3 +229,122 @@ Stack trace:
 #11 C:\laragon\www\jarotek\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
 #12 C:\laragon\www\jarotek\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
 #13 {main}
+ERROR - 2025-05-02 15:48:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 PRIMARY KEY(`id`),
+	CONSTRAINT `hra_id_tvurce_foreign` FOREIGN KEY (`id_tvu...' at line 9 in C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\xampp\htdocs\dolezal_vaclav\Hry\app\Database\Migrations\2025-03-23-121200_MigrationHra.php(22): CodeIgniter\Database\Forge->createTable('hra')
+#5 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationHra->up()
+#6 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\dolezal_vaclav\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-05-02 15:51:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 PRIMARY KEY(`id`),
+	CONSTRAINT `hra_id_tvurce_foreign` FOREIGN KEY (`id_tvu...' at line 9 in C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\xampp\htdocs\dolezal_vaclav\Hry\app\Database\Migrations\2025-03-23-121200_MigrationHra.php(22): CodeIgniter\Database\Forge->createTable('hra')
+#5 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationHra->up()
+#6 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\dolezal_vaclav\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-05-02 15:52:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 PRIMARY KEY(`id`),
+	CONSTRAINT `hra_id_tvurce_foreign` FOREIGN KEY (`id_tvu...' at line 9 in C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `h...', 0)
+#1 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `h...')
+#2 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `h...')
+#3 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `h...')
+#4 C:\xampp\htdocs\dolezal_vaclav\Hry\app\Database\Migrations\2025-03-23-121200_MigrationHra.php(22): CodeIgniter\Database\Forge->createTable('hra')
+#5 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationHra->up()
+#6 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\dolezal_vaclav\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-05-02 15:54:19 --> mysqli_sql_exception: Can't create table `hry`.`komentar` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\xampp\htdocs\dolezal_vaclav\Hry\app\Database\Migrations\2025-03-23-121200_MigrationKomentar.php(19): CodeIgniter\Database\Forge->createTable('komentar')
+#5 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationKometar->up()
+#6 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\dolezal_vaclav\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-05-02 15:54:41 --> mysqli_sql_exception: Can't create table `hry`.`komentar` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `k...', 0)
+#1 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `k...')
+#2 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `k...')
+#3 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `k...')
+#4 C:\xampp\htdocs\dolezal_vaclav\Hry\app\Database\Migrations\2025-03-23-121200_MigrationKomentar.php(19): CodeIgniter\Database\Forge->createTable('komentar')
+#5 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationKometar->up()
+#6 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\dolezal_vaclav\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-05-02 15:55:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_platforma` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SE...' at line 3 in C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\xampp\htdocs\dolezal_vaclav\Hry\app\Database\Migrations\2025-03-23-121200_MigrationPlaforma.php(16): CodeIgniter\Database\Forge->createTable('platforma')
+#5 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationPlatforma->up()
+#6 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\dolezal_vaclav\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-05-02 15:55:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_zanr` PRIMARY KEY(`id`)
+) DEFAULT CHARACTER SET = u...' at line 3 in C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `z...', 0)
+#1 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `z...')
+#2 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `z...')
+#3 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `z...')
+#4 C:\xampp\htdocs\dolezal_vaclav\Hry\app\Database\Migrations\2025-03-23-121200_MigrationZanr.php(17): CodeIgniter\Database\Forge->createTable('zanr')
+#5 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(866): App\Database\Migrations\MigrationZanr->up()
+#6 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\dolezal_vaclav\Hry\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\dolezal_vaclav\Hry\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\dolezal_vaclav\Hry\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
