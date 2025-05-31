@@ -8,6 +8,7 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
+use Config\ConfigConfig;
 
 /**
  * Class BaseController
@@ -35,7 +36,7 @@ abstract class BaseController extends Controller
      *
      * @var list<string>
      */
-    protected $helpers = [];
+    protected $helpers = ['html', 'form'];
 
     /**
      * Be sure to declare properties for any property fetch you initialized.
@@ -46,6 +47,8 @@ abstract class BaseController extends Controller
     /**
      * @return void
      */
+    var $config;
+
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
         // Do Not Edit This Line
@@ -54,5 +57,7 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = service('session');
+
+        $this->config = new ConfigConfig();
     }
 }

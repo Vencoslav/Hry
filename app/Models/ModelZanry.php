@@ -6,10 +6,10 @@ use CodeIgniter\Model;
 
 class ModelZanry extends Model
 {
-    protected $table            = 'modelzanries';
+    protected $table            = 'zanry';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [];

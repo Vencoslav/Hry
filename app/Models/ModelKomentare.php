@@ -6,10 +6,10 @@ use CodeIgniter\Model;
 
 class ModelKomentare extends Model
 {
-    protected $table            = 'modelkomentares';
+    protected $table            = 'komentare';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [];

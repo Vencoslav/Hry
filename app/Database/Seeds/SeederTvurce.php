@@ -39,12 +39,19 @@ class SeederTvurce extends Seeder
 
         $faker = Factory::create();
 
-        for($i = 0; $i < 5000; $i++){
-            $data = [
-                'popis' => /*$this->translate(*/$faker->paragraph(8)/*, "la", "en")*/,
-                'zalozeni' => $faker->date(),
+        // Prvních 25 firem s názvem
+        foreach ($data as $item) {
+            $this->db->table('tvurce')->insert($item);
+        }
+
+        // Generování dalších 5000 firem s popisem a datem
+        for ($i = 0; $i < 5000; $i++) {
+            $fakerData = [
+                'nazev' => $faker->company, // Generování název firmy
+                'popis' => $faker->paragraph(8), // Generování popisu
+                'zalozeni' => $faker->date(), // Generování data založení
             ];
-            $this->db->table('tvurce')->insert($data);
+            $this->db->table('tvurce')->insert($fakerData);
         }
     }
 }

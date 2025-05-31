@@ -6,10 +6,10 @@ use CodeIgniter\Model;
 
 class ModelPlatformy extends Model
 {
-    protected $table            = 'modelplatformies';
+    protected $table            = 'pltformy';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [];
