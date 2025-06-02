@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class ModelZanry extends Model
 {
-    protected $table            = 'zanry';
+    protected $table            = 'zanr';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
