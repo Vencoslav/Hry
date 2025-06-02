@@ -9,6 +9,7 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 use Config\ConfigConfig;
+use App\Libraries\LibraryBreadcrumbs;
 
 /**
  * Class BaseController
@@ -48,6 +49,7 @@ abstract class BaseController extends Controller
      * @return void
      */
     var $config;
+    var $breadcrumbs;
 
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
@@ -58,6 +60,19 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = service('session');
 
+        $this->breadcrumbs = new LibraryBreadcrumbs();
+        $this->addBreadcrumb('Home', base_url());
         $this->config = new ConfigConfig();
+    }
+
+    public function addBreadcrumb($label, $url = '#')
+    {
+        $this->breadcrumbs->push($label, $url);
+    }
+
+    public function renderView(string $view, array $data = [])
+    {
+        $data['breadcrumbs'] = $this->breadcrumbs->show();
+        return view($view, $data);
     }
 }
