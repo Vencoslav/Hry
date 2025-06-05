@@ -16,7 +16,7 @@ class ControllerZanry extends BaseController
         $this->platformy = new ModelPlatformy();
     }
 
-     public function loadPlatfromy()
+     public function loadPlatformy()
     {
         $platformsPerpage = $this->config->platformsPerpage;
         $data['platformy'] = $this->platformy->orderBy('nazev', 'asc')->paginate($platformsPerpage);
