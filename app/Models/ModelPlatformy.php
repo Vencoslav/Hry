@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class ModelPlatformy extends Model
 {
-    protected $table            = 'pltformy';
+    protected $table            = 'platforma';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
