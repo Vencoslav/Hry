@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
-use App\Models\ModelPlatfromy;
+use App\Models\ModelPlatformy;
 
 class ControllerZanry extends BaseController
 {
@@ -13,7 +13,7 @@ class ControllerZanry extends BaseController
      public function initController($request, $response, $logger)
     {
         parent::initController($request, $response, $logger);
-        $this->platformy = new ModelPlatfromy();
+        $this->platformy = new ModelPlatformy();
     }
 
      public function loadPlatfromy()
