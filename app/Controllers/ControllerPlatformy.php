@@ -6,7 +6,7 @@ use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\ModelPlatformy;
 
-class ControllerZanry extends BaseController
+class ControllerPlatformy extends BaseController
 {
     var $platformy;
 
