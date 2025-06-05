@@ -18,7 +18,8 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="<?= base_url('hry') ?>">Hry</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?= base_url('tvurci') ?>">Tvůrci</a></li>
-                        <li class="nav-item"><a class="nav-link" href="<?= base_url('zanry') ?>">žánry</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?= base_url('zanry') ?>">Žánry</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?= base_url('platformy') ?>">Platformy</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>">Login</a></li>
                     </ul>
                 </div>
