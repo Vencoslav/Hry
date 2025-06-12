@@ -50,7 +50,8 @@ class ControllerIonAuth extends BaseController
 
     public function loadRegister()
     {
-        return view('ViewRegister');
+        $data['title'] = 'Registrace';
+        return view('ViewRegister', $data);
     }
 
     public function processRegister()
