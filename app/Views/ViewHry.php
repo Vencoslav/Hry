@@ -3,7 +3,7 @@
 
 <div class="container mt-4">
     <?php echo""// if ($isLoggedIn): ?>
-        <a href="<?= base_url('games/new') ?>" class="btn btn-primary">Add New Game</a>
+        <a href="<?= base_url('hry/new') ?>" class="btn btn-primary">Add New Game</a>
     <?php echo""// endif; ?>
     
     <div class="row">

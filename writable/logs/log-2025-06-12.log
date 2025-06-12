@@ -26,3 +26,31 @@ in APPPATH\Views\ViewHry.php on line 15.
  9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 15:51:18 --> ErrorException: Undefined variable $author
+[Method: GET, Route: hry/new]
+in APPPATH\Views\ViewAddHra.php on line 26.
+ 1 APPPATH\Views\ViewAddHra.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $author', 'C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewAddHra.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewAddHra.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewAddHra', [], true)
+ 5 APPPATH\Controllers\ControllerHry.php(75): view('ViewAddHra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHry->newHra()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHry))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 15:52:16 --> ErrorException: Undefined property: stdClass::$name
+[Method: GET, Route: hry/new]
+in APPPATH\Views\ViewAddHra.php on line 35.
+ 1 APPPATH\Views\ViewAddHra.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$name', 'C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewAddHra.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewAddHra.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewAddHra', [], true)
+ 5 APPPATH\Controllers\ControllerHry.php(75): view('ViewAddHra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHry->newHra()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHry))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

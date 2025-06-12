@@ -20,10 +20,10 @@
     </div>
 
     <div class="mb-3">
-        <label>Tvurci</label>
+        <label>Authors</label>
         <select name="author_ids[]" class="form-control" multiple>
             <?php foreach ($tvurci as $tvurce): ?>
-                <option value="<?= $tvurce->id ?>"><?= $tvurce->nazev ?> <?= $author->popis ?></option>
+                <option value="<?= $tvurce->id ?>"><?= $tvurce->nazev ?> <?= $tvurce->popis ?></option>
             <?php endforeach; ?>
         </select>
     </div>
@@ -32,7 +32,7 @@
         <label>Genres</label>
         <select name="genre_ids[]" class="form-control" multiple>
             <?php foreach ($zanry as $zanr): ?>
-                <option value="<?= $zanr->id ?>"><?= $zanr->name ?></option>
+                <option value="<?= $zanr->id ?>"><?= $zanr->nazev ?></option>
             <?php endforeach; ?>
         </select>
     </div>
