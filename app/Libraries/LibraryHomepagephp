@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Libraries;
+
+use App\Models\ModelHry;
+
+class LibraryHomepage
+{
+    var $modelHra;
+
+    public function __construct()
+    {
+        $this->modelHra = new ModelHry();
+    }
+
+    public function getHraTvurci()
+    {
+        return $this->modelHra
+        ->select('Hra.*, 
+                GROUP_CONCAT(CONCAT(tvurci.nazev) SEPARATOR ", ") as tvurci')
+        ->join('hra_tvurci', 'hra_tvurci.hra_id = hra.id')
+        ->join('tvurci', 'tvurci.id = hra_tvurci.tvurci_id')
+        ->groupBy('hra.id')
+        ->orderBy('RAND()')
+        ->limit(5)
+        ->findAll();
+    }
+}
