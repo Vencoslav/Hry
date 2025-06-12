@@ -41,21 +41,6 @@ class ControllerHry extends BaseController
         return view('ViewHry', $data);
     }
 
-    public function loadHra($id)
-    {
-        //
-    }
-
-    public function editHra($id)
-    {
-        //
-    }
-
-    public function updateHra($id)
-    {
-        //
-    }
-
     public function deleteHra($id)
     {
         $this->hry->delete($id);
