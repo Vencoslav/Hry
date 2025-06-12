@@ -3,7 +3,7 @@
 
 <div id="infoMessage"><?php echo $message ?? '';?></div>
 
-<?php echo form_open('auth/login');?>
+<?php echo form_open('login');?>
 
   <p>
     <?php echo form_label(lang('Auth.login_identity_label'), 'identity');?>
@@ -12,7 +12,7 @@
 
   <p>
     <?php echo form_label(lang('Auth.login_password_label'), 'password');?>
-    <?php echo form_input($password ?? '');?>
+    <?php echo form_password($password ?? '');?>
   </p>
 
   <p>
