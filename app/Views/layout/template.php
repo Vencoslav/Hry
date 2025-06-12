@@ -7,7 +7,7 @@
         <?= $this->include("layout/assets");?> 
         <style>
             .navbar-emerald {
-                background-color:rgb(0, 73, 25) !important; /* Emerald green HEX #50C878 */
+                background-color:rgb(0, 73, 25) !important;
             }
         </style>
     </head>
