@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class ModelHry extends Model
 {
-    protected $table            = 'hry';
+    protected $table            = 'hra';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';

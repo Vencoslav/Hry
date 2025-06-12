@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class ModelHryPlatformy extends Model
 {
-    protected $table            = 'hry_platformy';
+    protected $table            = 'hra_platforma';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';

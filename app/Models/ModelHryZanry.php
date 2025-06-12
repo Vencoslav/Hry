@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class ModelHryZanry extends Model
 {
-    protected $table            = 'hry_zanry';
+    protected $table            = 'hra_zanr';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
