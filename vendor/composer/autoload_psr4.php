@@ -38,6 +38,7 @@ return array(
     'Nexus\\CsConfig\\' => array($vendorDir . '/nexusphp/cs-config/src'),
     'Laminas\\Escaper\\' => array($vendorDir . '/laminas/laminas-escaper/src'),
     'Kint\\' => array($vendorDir . '/kint-php/kint/src'),
+    'IonAuth\\' => array($vendorDir . '/benedmunds/codeigniter-ion-auth'),
     'Fidry\\CpuCoreCounter\\' => array($vendorDir . '/fidry/cpu-core-counter/src'),
     'Faker\\' => array($vendorDir . '/fakerphp/faker/src/Faker'),
     'Evenement\\' => array($vendorDir . '/evenement/evenement/src'),
@@ -46,6 +47,6 @@ return array(
     'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),
     'Composer\\Pcre\\' => array($vendorDir . '/composer/pcre/src'),
     'CodeIgniter\\CodingStandard\\' => array($vendorDir . '/codeigniter/coding-standard/src'),
-    'CodeIgniter\\' => array($baseDir . '/system'),
+    'CodeIgniter\\' => array($baseDir . '/system', $vendorDir . '/codeigniter4/framework/system'),
     'Clue\\React\\NDJson\\' => array($vendorDir . '/clue/ndjson-react/src'),
 );
