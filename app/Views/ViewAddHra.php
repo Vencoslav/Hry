@@ -5,23 +5,23 @@
 
 <form method="POST" action="<?= base_url('hry/create') ?>">
     <div class="mb-3">
-        <label>Title</label>
-        <input type="text" name="title" class="form-control" required>
-    </div>
-    
-    <div class="mb-3">
-        <label>Description</label>
-        <textarea name="description" class="form-control" required></textarea>
+        <label>Název</label>
+        <input type="text" name="nazev" class="form-control" required>
     </div>
 
     <div class="mb-3">
-        <label>Published Date</label>
-        <input type="date" name="published_date" class="form-control">
+        <label>Popis</label>
+        <textarea name="popis" class="form-control" required></textarea>
     </div>
 
     <div class="mb-3">
-        <label>Authors</label>
-        <select name="author_ids[]" class="form-control" multiple>
+        <label>Datum vydání</label>
+        <input type="date" name="vydani" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label>Autoři</label>
+        <select name="id_tvurce[]" class="form-control" multiple>
             <?php foreach ($tvurci as $tvurce): ?>
                 <option value="<?= $tvurce->id ?>"><?= $tvurce->nazev ?> <?= $tvurce->popis ?></option>
             <?php endforeach; ?>
@@ -29,7 +29,7 @@
     </div>
 
     <div class="mb-3">
-        <label>Genres</label>
+        <label>Žánry</label>
         <select name="genre_ids[]" class="form-control" multiple>
             <?php foreach ($zanry as $zanr): ?>
                 <option value="<?= $zanr->id ?>"><?= $zanr->nazev ?></option>
@@ -37,7 +37,7 @@
         </select>
     </div>
 
-    <button type="submit" class="btn btn-primary">Add Game</button>
+    <button type="submit" class="btn btn-primary">Přidat hru</button>
 </form>
 
 <?= $this->endSection() ?>
