@@ -1,28 +1,39 @@
-<h1><?php echo lang('Auth.login_heading');?></h1>
-<p><?php echo lang('Auth.login_subheading');?></p>
+<?php $this->extend('layout/template') ?>
+<?php $this->section('content') ?>
 
-<div id="infoMessage"><?php echo $message ?? '';?></div>
+<div class="container mt-5">
+    <h2>Login</h2>
 
-<?php echo form_open('login');?>
+    <form method="post">
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" name="identity" class="form-control" required>
+        </div>
 
-  <p>
-    <?php echo form_label(lang('Auth.login_identity_label'), 'identity');?>
-    <?php echo form_input($identity ?? '');?>
-  </p>
+        <div class="form-group mt-2">
+            <label>Password</label>
+            <div class="input-group">
+                <input type="password" id="password" name="password" class="form-control" required>
+                <button type="button" class="btn btn-outline-secondary" onclick="togglePassword()">Show</button>
+            </div>
+        </div>
 
-  <p>
-    <?php echo form_label(lang('Auth.login_password_label'), 'password');?>
-    <?php echo form_password($password ?? '');?>
-  </p>
+        <button type="submit" class="btn btn-success mt-3">Login</button>
+    </form>
+</div>
 
-  <p>
-    <?php echo form_label(lang('Auth.login_remember_label'), 'remember');?>
-    <?php echo form_checkbox('remember', '1', false, 'id="remember"');?>
-  </p>
+<script>
+    function togglePassword() {
+        const passwordField = document.getElementById("password");
+        const toggleButton = event.target;
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+            toggleButton.textContent = "Hide";
+        } else {
+            passwordField.type = "password";
+            toggleButton.textContent = "Show";
+        }
+    }
+</script>
 
-
-  <p><?php echo form_submit('submit', lang('Auth.login_submit_btn'));?></p>
-
-<?php echo form_close();?>
-
-<p><a href="forgot_password"><?php echo lang('Auth.login_forgot_password');?></a></p>
+<?php $this->endSection() ?>

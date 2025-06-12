@@ -21,8 +21,9 @@ class ControllerIonAuth extends BaseController
         if (!str_contains($referrer, '/login') && !str_contains($referrer, '/logout')) {
             session()->set('redirect_url', $referrer);
         }
+        $data['title'] = 'Přihlášení';
 
-        return view('ViewLogin');
+        return view('ViewLogin', $data);
     }
 
     public function processLogin()
