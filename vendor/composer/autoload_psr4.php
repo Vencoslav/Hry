@@ -46,6 +46,6 @@ return array(
     'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),
     'Composer\\Pcre\\' => array($vendorDir . '/composer/pcre/src'),
     'CodeIgniter\\CodingStandard\\' => array($vendorDir . '/codeigniter/coding-standard/src'),
-    'CodeIgniter\\' => array($baseDir . '/system'),
+    'CodeIgniter\\' => array($baseDir . '/system', $vendorDir . '/codeigniter4/framework/system'),
     'Clue\\React\\NDJson\\' => array($vendorDir . '/clue/ndjson-react/src'),
 );
