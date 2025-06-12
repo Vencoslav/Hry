@@ -1,0 +1,28 @@
+CRITICAL - 2025-06-12 15:46:29 --> ErrorException: Undefined variable $isLoggedIn
+[Method: GET, Route: hry]
+in APPPATH\Views\ViewHry.php on line 5.
+ 1 APPPATH\Views\ViewHry.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isLoggedIn', 'C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHry.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHry.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewHry', [], true)
+ 5 APPPATH\Controllers\ControllerHry.php(41): view('ViewHry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHry->loadHry()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHry))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 15:47:49 --> ErrorException: Undefined property: stdClass::$title
+[Method: GET, Route: hry]
+in APPPATH\Views\ViewHry.php on line 15.
+ 1 APPPATH\Views\ViewHry.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$title', 'C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHry.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHry.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewHry', [], true)
+ 5 APPPATH\Controllers\ControllerHry.php(41): view('ViewHry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHry->loadHry()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHry))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

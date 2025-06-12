@@ -2,9 +2,9 @@
 <?= $this->section('content') ?>
 
 <div class="container mt-4">
-    <?php if ($isLoggedIn): ?>
+    <?php echo""// if ($isLoggedIn): ?>
         <a href="<?= base_url('games/new') ?>" class="btn btn-primary">Add New Game</a>
-    <?php endif; ?>
+    <?php echo""// endif; ?>
     
     <div class="row">
         <?php foreach ($hry as $hra): ?>
@@ -12,7 +12,7 @@
                 <div class="card h-100">
                     <div class="card-body d-flex flex-column justify-content-between">
                         <h5 class="card-title">
-                            <?= anchor('hry/'.$hra->id, $hra->title) ?>
+                            <?= anchor('hry/'.$hra->id, $hra->nazev) ?>
                         </h5>
                     </div>
                 </div>
