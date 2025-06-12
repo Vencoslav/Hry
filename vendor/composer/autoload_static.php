@@ -72,6 +72,10 @@ class ComposerStaticInitea36eeffabd1182e4abd39055bffee0a
         array (
             'Kint\\' => 5,
         ),
+        'I' => 
+        array (
+            'IonAuth\\' => 8,
+        ),
         'F' => 
         array (
             'Fidry\\CpuCoreCounter\\' => 21,
@@ -224,6 +228,10 @@ class ComposerStaticInitea36eeffabd1182e4abd39055bffee0a
         'Kint\\' => 
         array (
             0 => __DIR__ . '/..' . '/kint-php/kint/src',
+        ),
+        'IonAuth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/benedmunds/codeigniter-ion-auth',
         ),
         'Fidry\\CpuCoreCounter\\' => 
         array (
@@ -1286,6 +1294,11 @@ class ComposerStaticInitea36eeffabd1182e4abd39055bffee0a
         'Fidry\\CpuCoreCounter\\Finder\\_NProcessorFinder' => __DIR__ . '/..' . '/fidry/cpu-core-counter/src/Finder/_NProcessorFinder.php',
         'Fidry\\CpuCoreCounter\\NumberOfCpuCoreNotFound' => __DIR__ . '/..' . '/fidry/cpu-core-counter/src/NumberOfCpuCoreNotFound.php',
         'Fidry\\CpuCoreCounter\\ParallelisationResult' => __DIR__ . '/..' . '/fidry/cpu-core-counter/src/ParallelisationResult.php',
+        'IonAuth\\Config\\IonAuth' => __DIR__ . '/..' . '/benedmunds/codeigniter-ion-auth/Config/IonAuth.php',
+        'IonAuth\\Controllers\\Auth' => __DIR__ . '/..' . '/benedmunds/codeigniter-ion-auth/Controllers/Auth.php',
+        'IonAuth\\Database\\Seeds\\IonAuthSeeder' => __DIR__ . '/..' . '/benedmunds/codeigniter-ion-auth/Database/Seeds/IonAuthSeeder.php',
+        'IonAuth\\Libraries\\IonAuth' => __DIR__ . '/..' . '/benedmunds/codeigniter-ion-auth/Libraries/IonAuth.php',
+        'IonAuth\\Models\\IonAuthModel' => __DIR__ . '/..' . '/benedmunds/codeigniter-ion-auth/Models/IonAuthModel.php',
         'Kint\\CallFinder' => __DIR__ . '/..' . '/kint-php/kint/src/CallFinder.php',
         'Kint\\FacadeInterface' => __DIR__ . '/..' . '/kint-php/kint/src/FacadeInterface.php',
         'Kint\\Kint' => __DIR__ . '/..' . '/kint-php/kint/src/Kint.php',

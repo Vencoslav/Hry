@@ -3,13 +3,22 @@
         'name' => 'hry/project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '18f6831abbd76794c58fa73a07ecdaa0cedae5aa',
+        'reference' => '307bf02397593c908c27d38ad688a1f5c78da5f6',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        'benedmunds/codeigniter-ion-auth' => array(
+            'pretty_version' => '4.x-dev',
+            'version' => '4.9999999.9999999.9999999-dev',
+            'reference' => '395b84dc43052c9d0246fd4b5ef65cf12a815b82',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../benedmunds/codeigniter-ion-auth',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'clue/ndjson-react' => array(
             'pretty_version' => 'v1.3.0',
             'version' => '1.3.0.0',
@@ -103,7 +112,7 @@
         'hry/project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '18f6831abbd76794c58fa73a07ecdaa0cedae5aa',
+            'reference' => '307bf02397593c908c27d38ad688a1f5c78da5f6',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
