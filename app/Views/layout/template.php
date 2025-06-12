@@ -5,10 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <?= $this->include("layout/assets");?> 
+        <style>
+            .navbar-emerald {
+                background-color:rgb(0, 73, 25) !important; /* Emerald green HEX #50C878 */
+            }
+        </style>
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-emerald mb-4">
             <div class="container-fluid">
                 <a class="navbar-brand" href="<?= base_url() ?>">Domů</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
