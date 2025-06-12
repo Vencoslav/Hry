@@ -25,7 +25,7 @@
                         <li class="nav-item"><a class="nav-link" href="<?= base_url('tvurci') ?>">Tvůrci</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?= base_url('zanry') ?>">Žánry</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?= base_url('platformy') ?>">Platformy</a></li>
-                        <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?= base_url('login') ?>">Login</a></li>
                     </ul>
                 </div>
             </div>
