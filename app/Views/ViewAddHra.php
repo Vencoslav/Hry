@@ -1,7 +1,7 @@
 <?= $this->extend('layout/template') ?>
 <?= $this->section('content') ?>
 
-<h1 class="mb-4">Add New Game</h1>
+<h1 class="mb-4">Přidat novou hru</h1>
 
 <form method="POST" action="<?= base_url('hry/create') ?>">
     <div class="mb-3">
