@@ -54,3 +54,339 @@ in APPPATH\Views\ViewAddHra.php on line 35.
  9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 19:25:25 --> ArgumentCountError: Too few arguments to function App\Controllers\ControllerHra::loadHry(), 0 passed in C:\laragon-6.0.0\www\Hry\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: hry]
+in APPPATH\Controllers\ControllerHra.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHry()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 19:26:43 --> ArgumentCountError: Too few arguments to function App\Controllers\ControllerHra::loadHra(), 0 passed in C:\laragon-6.0.0\www\Hry\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: hry]
+in APPPATH\Controllers\ControllerHra.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 19:26:45 --> ArgumentCountError: Too few arguments to function App\Controllers\ControllerHra::loadHra(), 0 passed in C:\laragon-6.0.0\www\Hry\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: hry]
+in APPPATH\Controllers\ControllerHra.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 19:26:46 --> ArgumentCountError: Too few arguments to function App\Controllers\ControllerHra::loadHra(), 0 passed in C:\laragon-6.0.0\www\Hry\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: hry]
+in APPPATH\Controllers\ControllerHra.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-12 19:28:19 --> mysqli_sql_exception: Table 'hry.hra_tvurce' doesn't exist in C:\laragon-6.0.0\www\Hry\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon-6.0.0\www\Hry\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `hra`.*,...', 0)
+#1 C:\laragon-6.0.0\www\Hry\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `hra`.*,...')
+#2 C:\laragon-6.0.0\www\Hry\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `hra`.*,...')
+#3 C:\laragon-6.0.0\www\Hry\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `hra`.*,...', Array, false)
+#4 C:\laragon-6.0.0\www\Hry\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\Hry\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\laragon-6.0.0\www\Hry\app\Controllers\ControllerHra.php(31): CodeIgniter\BaseModel->first()
+#7 C:\laragon-6.0.0\www\Hry\system\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+#8 C:\laragon-6.0.0\www\Hry\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+#9 C:\laragon-6.0.0\www\Hry\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\Hry\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon-6.0.0\www\Hry\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon-6.0.0\www\Hry\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-12 19:28:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'hry.hra_tvurce' doesn't exist
+[Method: GET, Route: hry/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `hra`.*, GROUP_CONCAT(tvurce.nazev ORDER BY tvurce.nazev) as tvurce, GROUP_CONCAT(zanr.nazev ORDER BY zanr.nazev) as zanry
+FROM `hra`
+JOIN `hra_tvurce` ON `hra_tvurce`.`hra_id` = `hra`.`id`
+JOIN `tvurce` ON `tvurce`.`id` = `hra_tvurce`.`tvurce_id`
+JOIN `hra_zanr` ON `hra_zanr`.`hra_id` = `hra`.`id`
+JOIN `zanr` ON `zanr`.`id` = `hra_zanr`.`zanr_id`
+WHERE `hra`.`id` = :hra.id:
+GROUP BY `hra`.`id`
+ORDER BY `hra`.`id` ASC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\ControllerHra.php(31): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 19:28:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'hry.hra_tvurce' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `hra`.*, GROUP_CONCAT(tvurce.nazev ORDER BY tvurce.nazev) as tvurce, GROUP_CONCAT(zanr.nazev ORDER BY zanr.nazev) as zanry
+FROM `hra`
+JOIN `hra_tvurce` ON `hra_tvurce`.`hra_id` = `hra`.`id`
+JOIN `tvurce` ON `tvurce`.`id` = `hra_tvurce`.`tvurce_id`
+JOIN `hra_zanr` ON `hra_zanr`.`hra_id` = `hra`.`id`
+JOIN `zanr` ON `zanr`.`id` = `hra_zanr`.`zanr_id`
+WHERE `hra`.`id` = \'1\'
+GROUP BY `hra`.`id`
+ORDER BY `hra`.`id` ASC
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `hra`.*, GROUP_CONCAT(tvurce.nazev ORDER BY tvurce.nazev) as tvurce, GROUP_CONCAT(zanr.nazev ORDER BY zanr.nazev) as zanry
+FROM `hra`
+JOIN `hra_tvurce` ON `hra_tvurce`.`hra_id` = `hra`.`id`
+JOIN `tvurce` ON `tvurce`.`id` = `hra_tvurce`.`tvurce_id`
+JOIN `hra_zanr` ON `hra_zanr`.`hra_id` = `hra`.`id`
+JOIN `zanr` ON `zanr`.`id` = `hra_zanr`.`zanr_id`
+WHERE `hra`.`id` = \'1\'
+GROUP BY `hra`.`id`
+ORDER BY `hra`.`id` ASC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `hra`.*, GROUP_CONCAT(tvurce.nazev ORDER BY tvurce.nazev) as tvurce, GROUP_CONCAT(zanr.nazev ORDER BY zanr.nazev) as zanry
+FROM `hra`
+JOIN `hra_tvurce` ON `hra_tvurce`.`hra_id` = `hra`.`id`
+JOIN `tvurce` ON `tvurce`.`id` = `hra_tvurce`.`tvurce_id`
+JOIN `hra_zanr` ON `hra_zanr`.`hra_id` = `hra`.`id`
+JOIN `zanr` ON `zanr`.`id` = `hra_zanr`.`zanr_id`
+WHERE `hra`.`id` = :hra.id:
+GROUP BY `hra`.`id`
+ORDER BY `hra`.`id` ASC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\ControllerHra.php(31): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 19:28:19 --> [Caused by] mysqli_sql_exception: Table 'hry.hra_tvurce' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `hra`.*, GROUP_CONCAT(tvurce.nazev ORDER BY tvurce.nazev) as tvurce, GROUP_CONCAT(zanr.nazev ORDER BY zanr.nazev) as zanry
+FROM `hra`
+JOIN `hra_tvurce` ON `hra_tvurce`.`hra_id` = `hra`.`id`
+JOIN `tvurce` ON `tvurce`.`id` = `hra_tvurce`.`tvurce_id`
+JOIN `hra_zanr` ON `hra_zanr`.`hra_id` = `hra`.`id`
+JOIN `zanr` ON `zanr`.`id` = `hra_zanr`.`zanr_id`
+WHERE `hra`.`id` = \'1\'
+GROUP BY `hra`.`id`
+ORDER BY `hra`.`id` ASC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `hra`.*, GROUP_CONCAT(tvurce.nazev ORDER BY tvurce.nazev) as tvurce, GROUP_CONCAT(zanr.nazev ORDER BY zanr.nazev) as zanry
+FROM `hra`
+JOIN `hra_tvurce` ON `hra_tvurce`.`hra_id` = `hra`.`id`
+JOIN `tvurce` ON `tvurce`.`id` = `hra_tvurce`.`tvurce_id`
+JOIN `hra_zanr` ON `hra_zanr`.`hra_id` = `hra`.`id`
+JOIN `zanr` ON `zanr`.`id` = `hra_zanr`.`zanr_id`
+WHERE `hra`.`id` = \'1\'
+GROUP BY `hra`.`id`
+ORDER BY `hra`.`id` ASC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `hra`.*, GROUP_CONCAT(tvurce.nazev ORDER BY tvurce.nazev) as tvurce, GROUP_CONCAT(zanr.nazev ORDER BY zanr.nazev) as zanry
+FROM `hra`
+JOIN `hra_tvurce` ON `hra_tvurce`.`hra_id` = `hra`.`id`
+JOIN `tvurce` ON `tvurce`.`id` = `hra_tvurce`.`tvurce_id`
+JOIN `hra_zanr` ON `hra_zanr`.`hra_id` = `hra`.`id`
+JOIN `zanr` ON `zanr`.`id` = `hra_zanr`.`zanr_id`
+WHERE `hra`.`id` = \'1\'
+GROUP BY `hra`.`id`
+ORDER BY `hra`.`id` ASC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `hra`.*, GROUP_CONCAT(tvurce.nazev ORDER BY tvurce.nazev) as tvurce, GROUP_CONCAT(zanr.nazev ORDER BY zanr.nazev) as zanry
+FROM `hra`
+JOIN `hra_tvurce` ON `hra_tvurce`.`hra_id` = `hra`.`id`
+JOIN `tvurce` ON `tvurce`.`id` = `hra_tvurce`.`tvurce_id`
+JOIN `hra_zanr` ON `hra_zanr`.`hra_id` = `hra`.`id`
+JOIN `zanr` ON `zanr`.`id` = `hra_zanr`.`zanr_id`
+WHERE `hra`.`id` = :hra.id:
+GROUP BY `hra`.`id`
+ORDER BY `hra`.`id` ASC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\ControllerHra.php(31): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 19:32:59 --> ErrorException: Undefined property: stdClass::$title
+[Method: GET, Route: hry/1]
+in APPPATH\Controllers\ControllerHra.php on line 33.
+ 1 APPPATH\Controllers\ControllerHra.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$title', 'C:\\laragon-6.0.0\\www\\Hry\\app\\Controllers\\ControllerHra.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 19:34:36 --> ErrorException: Undefined variable $ionAuth
+[Method: GET, Route: hry/1]
+in APPPATH\Views\ViewHra.php on line 6.
+ 1 APPPATH\Views\ViewHra.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ionAuth', 'C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewHra', [], true)
+ 5 APPPATH\Controllers\BaseController.php(76): view('ViewHra', [...])
+ 6 APPPATH\Controllers\ControllerHra.php(35): App\Controllers\BaseController->renderView('ViewHra', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 19:36:04 --> ErrorException: Undefined property: stdClass::$title
+[Method: GET, Route: hry/1]
+in APPPATH\Views\ViewHra.php on line 12.
+ 1 APPPATH\Views\ViewHra.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$title', 'C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewHra', [], true)
+ 5 APPPATH\Controllers\BaseController.php(76): view('ViewHra', [...])
+ 6 APPPATH\Controllers\ControllerHra.php(35): App\Controllers\BaseController->renderView('ViewHra', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-12 19:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-12 19:36:30 --> [DEPRECATED] Creation of dynamic property IonAuth\Libraries\IonAuth::$session is deprecated in FCPATH\vendor\benedmunds\codeigniter-ion-auth\Libraries\IonAuth.php on line 65.
+ 1 APPPATH\Views\ViewHra.php(5): IonAuth\Libraries\IonAuth->__construct()
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewHra', [], true)
+ 5 APPPATH\Controllers\BaseController.php(76): view('ViewHra', [...])
+ 6 APPPATH\Controllers\ControllerHra.php(35): App\Controllers\BaseController->renderView('ViewHra', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 19:36:30 --> ErrorException: Undefined property: stdClass::$description
+[Method: GET, Route: hry/1]
+in APPPATH\Views\ViewHra.php on line 13.
+ 1 APPPATH\Views\ViewHra.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$description', 'C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewHra', [], true)
+ 5 APPPATH\Controllers\BaseController.php(76): view('ViewHra', [...])
+ 6 APPPATH\Controllers\ControllerHra.php(35): App\Controllers\BaseController->renderView('ViewHra', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-12 19:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-12 19:37:20 --> [DEPRECATED] Creation of dynamic property IonAuth\Libraries\IonAuth::$session is deprecated in FCPATH\vendor\benedmunds\codeigniter-ion-auth\Libraries\IonAuth.php on line 65.
+ 1 APPPATH\Views\ViewHra.php(5): IonAuth\Libraries\IonAuth->__construct()
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewHra', [], true)
+ 5 APPPATH\Controllers\BaseController.php(76): view('ViewHra', [...])
+ 6 APPPATH\Controllers\ControllerHra.php(35): App\Controllers\BaseController->renderView('ViewHra', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 19:37:20 --> ErrorException: Undefined property: stdClass::$title
+[Method: GET, Route: hry/1]
+in APPPATH\Views\ViewHra.php on line 47.
+ 1 APPPATH\Views\ViewHra.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$title', 'C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewHra', [], true)
+ 5 APPPATH\Controllers\BaseController.php(76): view('ViewHra', [...])
+ 6 APPPATH\Controllers\ControllerHra.php(35): App\Controllers\BaseController->renderView('ViewHra', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-12 19:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-12 19:38:32 --> [DEPRECATED] Creation of dynamic property IonAuth\Libraries\IonAuth::$session is deprecated in FCPATH\vendor\benedmunds\codeigniter-ion-auth\Libraries\IonAuth.php on line 65.
+ 1 APPPATH\Views\ViewHra.php(5): IonAuth\Libraries\IonAuth->__construct()
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewHra', [], true)
+ 5 APPPATH\Controllers\BaseController.php(76): view('ViewHra', [...])
+ 6 APPPATH\Controllers\ControllerHra.php(35): App\Controllers\BaseController->renderView('ViewHra', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-12 19:38:32 --> ErrorException: Undefined variable $title
+[Method: GET, Route: hry/1]
+in APPPATH\Views\layout\template.php on line 4.
+ 1 APPPATH\Views\layout\template.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\layout\\template.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewHra', [], true)
+ 6 APPPATH\Controllers\BaseController.php(76): view('ViewHra', [...])
+ 7 APPPATH\Controllers\ControllerHra.php(35): App\Controllers\BaseController->renderView('ViewHra', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-12 19:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-12 19:40:45 --> [DEPRECATED] Creation of dynamic property IonAuth\Libraries\IonAuth::$session is deprecated in FCPATH\vendor\benedmunds\codeigniter-ion-auth\Libraries\IonAuth.php on line 65.
+ 1 APPPATH\Views\ViewHra.php(5): IonAuth\Libraries\IonAuth->__construct()
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewHra', [], true)
+ 5 APPPATH\Controllers\BaseController.php(76): view('ViewHra', [...])
+ 6 APPPATH\Controllers\ControllerHra.php(36): App\Controllers\BaseController->renderView('ViewHra', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-12 19:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-12 19:41:07 --> [DEPRECATED] Creation of dynamic property IonAuth\Libraries\IonAuth::$session is deprecated in FCPATH\vendor\benedmunds\codeigniter-ion-auth\Libraries\IonAuth.php on line 65.
+ 1 APPPATH\Views\ViewHra.php(5): IonAuth\Libraries\IonAuth->__construct()
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewHra', [], true)
+ 5 APPPATH\Controllers\BaseController.php(76): view('ViewHra', [...])
+ 6 APPPATH\Controllers\ControllerHra.php(36): App\Controllers\BaseController->renderView('ViewHra', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-12 19:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-12 19:41:34 --> [DEPRECATED] Creation of dynamic property IonAuth\Libraries\IonAuth::$session is deprecated in FCPATH\vendor\benedmunds\codeigniter-ion-auth\Libraries\IonAuth.php on line 65.
+ 1 APPPATH\Views\ViewHra.php(5): IonAuth\Libraries\IonAuth->__construct()
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon-6.0.0\\www\\Hry\\app\\Views\\ViewHra.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ViewHra', [], true)
+ 5 APPPATH\Controllers\BaseController.php(76): view('ViewHra', [...])
+ 6 APPPATH\Controllers\ControllerHra.php(36): App\Controllers\BaseController->renderView('ViewHra', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ControllerHra->loadHra('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerHra))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

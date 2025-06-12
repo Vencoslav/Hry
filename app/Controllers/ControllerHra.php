@@ -22,16 +22,16 @@ class ControllerHra extends BaseController
             ->select('hra.*, 
                 GROUP_CONCAT(tvurce.nazev ORDER BY tvurce.nazev) as tvurce, 
                 GROUP_CONCAT(zanr.nazev ORDER BY zanr.nazev) as zanry')
-            ->join('hra_tvurce', 'hra_tvurce.hra_id = hra.id')
-            ->join('tvurce', 'tvurce.id = hra_tvurce.tvurce_id')
+            ->join('tvurce', 'tvurce.id = hra.id_tvurce')
             ->join('hra_zanr', 'hra_zanr.hra_id = hra.id')
             ->join('zanr', 'zanr.id = hra_zanr.zanr_id')
             ->where('hra.id', $id)
             ->groupBy('hra.id')
             ->first();
+            $data["title"] = $data["hra"]->nazev;
 
         $this->addBreadcrumb('Hry', base_url('hry'));
-        $this->addBreadcrumb($data['hra']->title, base_url('hry/').$id); 
+        $this->addBreadcrumb($data['hra']->nazev, base_url('hry/').$id); 
 
         return $this->renderView('ViewHra', $data);
 

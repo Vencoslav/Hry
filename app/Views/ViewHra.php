@@ -2,15 +2,15 @@
 <?= $this->section('content') ?>
 
 <?php 
-    //$ionAuth = new \IonAuth\Libraries\IonAuth();
+    $ionAuth = new \IonAuth\Libraries\IonAuth();
     $isLoggedIn = $ionAuth->loggedIn();
 ?>
 
 <div id="invoice">
     <div class="row h-100">
         <div class="col-sm mt-5">
-            <h2 class="card-title"><?= $hra->title ?></h2> 
-            <p class="description my-3"><?= $hra->description ?></p>
+            <h2 class="card-title"><?= $hra->nazev ?></h2> 
+            <p class="description my-3"><?= $hra->popis ?></p>
             <div class="col-sm no-print">
                 <button type="button" class="btn btn-primary btn-sm mt-3 w-100" onclick="download_pdf()">Download PDF</button>
             </div> 
@@ -44,7 +44,7 @@ function download_pdf() {
             .from(pdf)
             .set({
                 margin: 10,
-                filename: '<?= $hra->title ?>',
+                filename: '<?= $hra->nazev ?>',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: {
                     scale: 2,

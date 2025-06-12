@@ -13,7 +13,7 @@ $routes->get('zanry', 'ControllerZanry::loadZanry');
 
 $routes->get('platformy', 'ControllerPlatformy::loadPlatformy');
 
-$routes->get('hry', 'ControllerHra::loadHry');
+$routes->get('hry', 'ControllerHry::loadHry');
 $routes->get('hry/(:num)', 'ControllerHra::loadHra/$1');
 $routes->get('hry/edit/(:num)', 'ControllerHra::editHra/$1');
 $routes->post('hry/update/(:num)', 'ControllerHra::updateHra/$1');
