@@ -4,9 +4,9 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ModelKomentare extends Model
+class ModelHryZanry extends Model
 {
-    protected $table            = 'komentar';
+    protected $table            = 'hra_zanr';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
